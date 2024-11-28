@@ -1,0 +1,91 @@
+body {
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử cuộn xuống dòng mới khi đầy */
+    justify-content: center; /* Canh giữa các phần tử theo chiều ngang */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    margin-top: 20%; /* Khoảng cách phía trên cho phần tử info0 */
+}
+
+.info0 {
+    width: 200px; /* Đặt rộng cho mỗi phần tử .info */
+    height: 250px; /* Đặt cao cho mỗi phần tử .info */
+    background-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Đặt .info0 cố định ở giữa màn hình */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9,
+.info10, .info11, .info12, .info13, .info14, .info15, .info16, .info17, .info18, .info19,
+.info20, .info21, .info22, .info23, .info24, .info25, .info26, .info27, .info28, .info29,
+.info30, .info31, .info32, .info33, .info34, .info35, .info36, .info37, .info38, .info39,
+.info40, .info41, .info42, .info43, .info44, .info45, .info46 {
+    width: 200px; /* Đặt rộng cho mỗi phần tử .info */
+    height: 250px; /* Đặt cao cho mỗi phần tử .info */
+    background-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Căn giữa tên và hình ảnh trong mỗi phần tử */
+.font-info {
+    margin-top: 10px; /* Tạo khoảng cách giữa ảnh và tên */
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icons {
+    display: flex; /* Đặt các logo Facebook và Instagram ngang hàng */
+    justify-content: center; /* Căn giữa các logo */
+    gap: 50px; /* Khoảng cách giữa các logo */
+    margin-top: 80px; /* Tạo khoảng cách giữa hình ảnh và các logo */
+}
+
+.logo-facebook, .logo-instargram {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 8px 16px rgba(26, 25, 25, 0.2);
+}
+
+.logo-facebook img, .logo-instargram img {
+    width: 100%;
+    height: 100%;
+}

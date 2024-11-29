@@ -130,3 +130,35 @@ hr {
     font-weight: bold; /* Đậm chữ */
     color: #333; /* Màu chữ */
 }
+.textif {
+    position: relative;
+    transform: translateY(-100px) translateX(-100px);
+    text-align: left;
+    font-size: 30px;
+    color: #333;
+}
+
+
+.banginfo2 {
+    width: auto; /* Chiều rộng tự động để giữ lại kích thước nguyên thủy */
+    max-width: 1500px; /* Hạn chế chiều rộng tối đa của phần tử */
+    height: 500px; /* Đặt chiều cao cho mỗi phần tử .info */
+    background-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0%;
+}
+hr {
+    border: none;       /* Loại bỏ viền mặc định */
+    height: 10px;        /* Độ dày của đường kẻ */
+    background-color: black; /* Màu của đường kẻ */
+    margin: 20px 0;     /* Khoảng cách trên và dưới đường kẻ */
+}
+

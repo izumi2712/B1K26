@@ -1,76 +1,124 @@
-
-body{
-    background-color: lightskyblue;
+body {
+    background: url(Images/cloud.jpg);
+    background-size: cover;
 }
+
 .logo-container {
     width: 300px;
     height: 300px;
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: aura-pulse 3s infinite;
 }
 
+/* Hiệu ứng phát sáng xung quanh */
+.logo-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6), 
+                0 0 40px 20px rgba(255, 215, 0, 0.4),
+                0 0 60px 30px rgba(255, 223, 0, 0.2);
+    animation: aura-glow 3s infinite alternate;
+}
+
+/* Hiệu ứng hình ảnh bên trong */
 .logo-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.memories-container {
-    position: absolute;
-    bottom: 70%;
-    right: 10%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 30px;
-    background-color: lightblue;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+/* Tạo hiệu ứng ánh sáng mờ dần */
+@keyframes aura-glow {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5), 
+                    0 0 30px 15px rgba(255, 215, 0, 0.3),
+                    0 0 45px 20px rgba(255, 223, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.7), 
+                    0 0 50px 25px rgba(255, 215, 0, 0.5),
+                    0 0 75px 40px rgba(255, 223, 0, 0.3);
+    }
 }
-.achieve-container {
-    position: absolute;
-    bottom: 20%;
-    right: 5%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 30px;
-    background-color: lightblue;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+
+/* Hiệu ứng ánh sáng nhịp nhàng */
+@keyframes aura-pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
 }
-.info-container {
-    position: absolute;
-    bottom: 50%;
-    right: 60%;
-    transform: translate(-50%, -50%);
+
+/* Tạo hình dạng đám mây */
+.cloud-shape {
     width: 300px;
-    height: 30px;
-    background-color: lightblue;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
+    height: 150px;
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+    border-radius: 50% 50% 60% 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: absolute;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
+
 .font-main {
     font-size: 35px;
     font-family: "Sevillana", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+    color: #333;
+}
+
+/* Các hiệu ứng trôi nổi */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-30px);
+    }
+}
+
+@keyframes float-left {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateX(0px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(-30px);
+    }
+}
+
+/* Memories */
+.memories-container {
+    animation: float 3s ease-in-out infinite;
+    bottom: 60%;
+    right: 10%;
+}
+
+/* Achievements */
+.achieve-container {
+    animation: float-left 5s ease-in-out infinite;
+    bottom: 10%;
+    right: 5%;
+}
+
+/* Information */
+.info-container {
+    animation: float 5s ease-in-out infinite;
+    bottom: 40%;
+    right: 60%;
+}

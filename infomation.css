@@ -31,11 +31,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9,
-.info10, .info11, .info12, .info13, .info14, .info15, .info16, .info17, .info18, .info19,
-.info20, .info21, .info22, .info23, .info24, .info25, .info26, .info27, .info28, .info29,
-.info30, .info31, .info32, .info33, .info34, .info35, .info36, .info37, .info38, .info39,
-.info40, .info41, .info42, .info43, .info44, .info45, .info46 {
+.info1 {
     width: 200px; /* Đặt rộng cho mỗi phần tử .info */
     height: 250px; /* Đặt cao cho mỗi phần tử .info */
     background-color: lightblue;
@@ -90,4 +86,47 @@ body {
 .logo-facebook img, .logo-instargram img {
     width: 100%;
     height: 100%;
+}
+
+.banginfo {
+    width: auto; /* Chiều rộng tự động để giữ lại kích thước nguyên thủy */
+    max-width: 1500px; /* Hạn chế chiều rộng tối đa của phần tử */
+    height: 500px; /* Đặt chiều cao cho mỗi phần tử .info */
+    background-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    border: none;       /* Loại bỏ viền mặc định */
+    height: 10px;        /* Độ dày của đường kẻ */
+    background-color: black; /* Màu của đường kẻ */
+    margin: 20px 0;     /* Khoảng cách trên và dưới đường kẻ */
+}
+.bang-logo-container {
+    width: 350px;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 5%;
+}
+
+.bang-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-h1 {
+    position: relative;
+    transform: translateX(0px) translateY(-150px); /* Kết hợp cả hai transform */
+    font-size: 40px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    color: #333; /* Màu chữ */
 }

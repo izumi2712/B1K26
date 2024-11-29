@@ -1,31 +1,12 @@
-body {
-    background-color: lightskyblue;
-}
-
-.info0, .info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9,
-.info10, .info11, .info12, .info13, .info14, .info15, .info16, .info17, .info18, .info19,
-.info20, .info21, .info22, .info23, .info24, .info25, .info26, .info27, .info28, .info29,
-.info30, .info31, .info32, .info33, .info34, .info35, .info36, .info37, .info38, .info39,
-.info40, .info41, .info42, .info43, .info44, .info45, .info46 {
-    position: absolute;
-    bottom: 70%;
-    right: 10%;
-    transform: translate(-50%, -50%);
-    width: 100px; 
-    height: 100px;
-    background-color: lightblue;
-    border-radius: 50%; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.info img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%; 
-}
+<div class="social-icons">
+                <div class="logo-facebook">
+                    <a href="https://www.facebook.com/mai.cao.7509" target="_blank" class="social-icon">
+                        <img src="info images/facebook-icon.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="logo-instargram">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="info images/instagram_icon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>

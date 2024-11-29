@@ -41,7 +41,7 @@ body {
     background-color: lightblue;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,8 +51,9 @@ body {
 
 /* Căn giữa tên và hình ảnh trong mỗi phần tử */
 .font-info {
-    margin-top: 10px; /* Tạo khoảng cách giữa ảnh và tên */
-    font-size: 18px;
+    position: absolute;
+    margin-top: 200px; /* Tạo khoảng cách giữa ảnh và tên */
+    font-size: 22px;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
@@ -64,6 +65,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
+    transform: translateY(-30px);
 }
 
 .logo-container img {

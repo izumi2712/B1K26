@@ -162,3 +162,9 @@ hr {
     margin: 20px 0;     /* Khoảng cách trên và dưới đường kẻ */
 }
 
+.yuji-mai-regular {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

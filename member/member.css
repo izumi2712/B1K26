@@ -1,0 +1,79 @@
+body {
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử cuộn xuống dòng khi đầy */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    gap: 100px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+}
+
+/* Định dạng và hiệu ứng cho phần tử .info0 */
+.info0, .info1 {
+    width: 200px; /* Đặt rộng cho phần tử */
+    height: 250px; /* Đặt cao cho phần tử */
+    background-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 20px auto; /* Canh giữa theo chiều ngang (cho info0) */
+}
+
+/* Hiệu ứng hover cho .info0 và .info1 */
+.info0:hover, .info1:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Đổ bóng mạnh hơn */
+    background-color: #87CEFA; /* Thay đổi màu nền */
+}
+
+/* Hiệu ứng và định dạng cho chữ */
+.font-info {
+    font-size: 50px;
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* Màu chữ mặc định */
+    text-align: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.font-info:hover {
+    color: #FFD700; /* Chữ đổi thành màu vàng */
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6); /* Phát sáng */
+}
+
+//* Loại bỏ gạch chân trên tất cả liên kết */
+a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+}
+
+/* Loại bỏ gạch chân khi hover */
+a:hover {
+    text-decoration: none; /* Loại bỏ gạch chân khi di chuột qua */
+}
+
+/* Loại bỏ gạch chân khi đã nhấn vào liên kết */
+a:active {
+    text-decoration: none; /* Loại bỏ gạch chân khi nhấn */
+}
+
+/* Loại bỏ gạch chân sau khi đã truy cập liên kết */
+a:visited {
+    text-decoration: none; /* Loại bỏ gạch chân khi đã truy cập */
+}
+
+/* Loại bỏ gạch chân khi liên kết đang được focus */
+a:focus {
+    text-decoration: none; /* Loại bỏ gạch chân khi focus */
+}
+

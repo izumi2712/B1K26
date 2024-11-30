@@ -52,7 +52,7 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6); /* Phát sáng */
 }
 
-//* Loại bỏ gạch chân trên tất cả liên kết */
+/* Loại bỏ gạch chân trên tất cả liên kết */
 a {
     text-decoration: none; /* Loại bỏ gạch chân mặc định */
 }
